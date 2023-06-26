@@ -1,0 +1,1 @@
+insert into pessoas(nome, nascimento, sexo, peso, altura, nacionalidade) values ('RAFAEL', '2005-06-03', 'M', '100.0', '1.89', 'Brasil');
