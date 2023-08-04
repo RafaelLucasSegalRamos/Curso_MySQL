@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 17/07/2023 às 18:34
+-- Tempo de geração: 04/08/2023 às 20:53
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.1.17
 
@@ -71,7 +71,7 @@ CREATE TABLE `pessoas` (
 INSERT INTO `pessoas` (`ID_pessoa`, `nome`, `prof`, `nascimento`, `sexo`, `peso`, `altura`, `nacionalidade`) VALUES
 (1, 'RAFAEL', NULL, '2005-06-03', 'M', 100.00, 1.89, 'Brasil'),
 (2, 'ANA', NULL, '2003-08-21', 'F', 85.00, 1.67, 'EUA'),
-(3, 'Marcio', NULL, '1993-08-21', 'M', 97.00, 1.79, ''),
+(3, 'Marcio', NULL, '1993-08-21', 'M', 97.00, 1.79, 'Brasil'),
 (4, 'Lidia', NULL, '1950-08-21', 'F', 55.00, 1.55, 'Brasil'),
 (6, 'Romeo', NULL, '1975-12-01', 'M', 95.20, 1.74, 'Brasil'),
 (7, 'Bruna', NULL, '2004-09-05', 'F', 59.00, 1.65, 'EUA'),
