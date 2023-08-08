@@ -27,7 +27,7 @@ quando a chave estrangeira é igual a chave primaria o resto da linha que a chav
 /*Agora as diferenças entre os JOIN é que o INNER JOIN quando utilizado o select com ele, ele mostra apenas os gafanhotos que possuem umm curso favorito,
 e os que possuem um valor nulo apenas não aparecem lista que o select fez.*/
 
-select g.nome, c.nome, c.ano from gafanhotos as g left outer join cursos as c on c.idcurso = g.cursopreferido; 
+select g.nome, c.nome, c.ano from gafanhotos as g right  outer join cursos as c on c.idcurso = g.cursopreferido; 
 /*OUTER JOIN faz com que mesmo as linhas não foram relacionadas tambem apareçam, mas para isso temos que definir qual das duas tabelas terá preferência,
 no caso dessa vez terá preferência na tabela gafanhotos pois a tabela gafanhotos está a esquerda e antes do OUTER JOIN está escrito LEFT que define que o que terá preferência é o que está a esquerda, 
 para definir que o que está a direita tenha preferência  coloque ao invez de LEFT coloque RIGHT*/
