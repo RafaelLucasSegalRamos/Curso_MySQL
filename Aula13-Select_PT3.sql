@@ -11,4 +11,5 @@ neste exemplo, ele apareceria apenas as linhas que tinham o total de aula igual 
 faz com que apenas os grupos que possuem mais de 3 linhas possam aparecer, no caso deste exemplo só um cumpre esta condição. Para que o HAVING funcione ele a coluna que ele está filtrando precisa aparece no select (aqui) from...*/
 
 select avg(carga) from cursos;
-select carga, count(*) from cursos where ano > 2015 group by carga having carga > (select avg(carga) from cursos);
+select carga, count(*) from cursos where ano > 2015 group by carga having carga > (select avg(carga) from cursos); /*Colocando desta forma podemos fazer com que ele só adcione cursos com uma carga maior que a média,
+ pois colocando um parenteses e o select que faz o AVG()[Média] podemos fazer que o resultado da média possa fazer parte da filtração*/
